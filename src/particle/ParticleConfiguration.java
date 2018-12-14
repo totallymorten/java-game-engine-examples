@@ -51,7 +51,7 @@ public class ParticleConfiguration
 
 	public final static ParticleConfiguration CONF1 = new ParticleConfiguration(1.0,-1,500.0,14.0,0.0,-400.0,50.0,-50.0,0.0000001,0.0,10);
 	
-	public final static ParticleConfiguration CONF2 = new ParticleConfiguration(
+	public final static ParticleConfiguration SPRAY = new ParticleConfiguration(
 																				1.0,          // a delay before start spawning particles
 																				-1,			  // the time in which to spawn particles. -1 = infinite.
 																				1000.0,       // how many particles to spawn pr sec
@@ -62,9 +62,10 @@ public class ParticleConfiguration
 																				-50.0,       
 																				0.0000000,    // the acceleration on x axis (gravity)
 																				0.0000001,    // the acceleration on y axis (gravity)
-																				5             // size of the particles (rectangular)
+																				2             // size of the particles (rectangular)
 																				);
 
+	
 
 	public final static ParticleConfiguration CONF3 = new ParticleConfiguration
 	(
@@ -80,6 +81,24 @@ public class ParticleConfiguration
 			0.0000000,    // the acceleration on y axis (gravity)
 			20             // size of the particles (rectangular)
 	);
+	
+	
+	public final static ParticleConfiguration FOUNTAIN = new ParticleConfiguration(
+			1.0,          // a delay before start spawning particles
+			-1,			  // the time in which to spawn particles. -1 = infinite.
+			1000.0,       // how many particles to spawn pr sec
+			6.0,          // how many seconds a particle exists before removed
+			-40.0,        // the maximum x speed to spawn particles (+ = right,- = left)
+			40.0,
+			-50.0,         // the maximum speed to spawn particles (+ = down,- = up)
+			-500.0,       
+			0.0000000,    // the acceleration on x axis (gravity)
+			0.0000001,    // the acceleration on y axis (gravity)
+			2             // size of the particles (rectangular)
+			);
+
+	
+	
 	/**
 		// ***** CONFIGURATION BEGIN ****** //
 		

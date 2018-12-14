@@ -19,13 +19,15 @@ public class JavaParticleEngine extends JavaEngine
 	private static final long serialVersionUID = 3841844401025841597L;
 	
 	
-	ParticleSystem p = new ParticleSystem(6000, 500, 350, ParticleConfiguration.CONF2, Color.red, Color.green, 0.0);
+	ParticleSystem p = new ParticleSystem(6000, 500, 700, ParticleConfiguration.FOUNTAIN, Color.red, Color.yellow, 0.0);
+//	ParticleSystem p = new ParticleSystem(6000, 500, 350, ParticleConfiguration.SPRAY, Color.red, Color.green, 0.0);
 	//ParticleSystem p = new ParticleSystem(6000, 500, 350, ParticleConfiguration.CONF2);
 	//ParticleSystem p = new ParticleSystem(6000, 500, 350, ParticleConfiguration.CONF3);
 	
 	public JavaParticleEngine (int w, int h)
 	{
-		super(w,h,5000);
+		super(w,h,200);
+		renderStats = true;
 	}
 	
 	public void render(Graphics2D g)
@@ -42,8 +44,6 @@ public class JavaParticleEngine extends JavaEngine
 		g.setFont(font);
 		g.drawString("Particles: " + p.count, xRight, y+60);
 
-		renderStats(g, 200);
-		
 		p.render(g);
 	}
 	
