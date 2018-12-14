@@ -8,6 +8,7 @@ import java.awt.event.KeyEvent;
 import particle.ParticleConfiguration;
 import particle.ParticleSystem;
 import engine.JavaEngine;
+import engine.exception.JavaEngineException;
 
 
 public class JavaParticleEngine extends JavaEngine
@@ -30,7 +31,7 @@ public class JavaParticleEngine extends JavaEngine
 		renderStats = true;
 	}
 	
-	public void render(Graphics2D g)
+	public void render(Graphics2D g) throws JavaEngineException
 	{
 		
 		g.setColor(Color.black);

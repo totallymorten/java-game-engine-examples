@@ -29,7 +29,7 @@ public class JavaMinimalEngine extends JavaEngine
 		g.fillRect((int)x, (int)y, 20, 20);
 
 		
-		renderStats(g, 200);
+		renderStats(g);
 	}
 	
 	double x=13,y=47;
